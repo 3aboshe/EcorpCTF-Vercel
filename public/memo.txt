@@ -1,0 +1,11 @@
+To: Development Team
+From: Bill
+
+Subject: Temporary Portal Login Credentials
+
+Team, for the millionth time, stop leaving experimental folders on the server! I've reset the admin login credentials.
+
+username: tyrellw
+password: 3r@s3_UrS3lf!
+
+Serious note: Terry, I swear I'll fire you myself if you don't delete this folder (/dev/) before launch day!

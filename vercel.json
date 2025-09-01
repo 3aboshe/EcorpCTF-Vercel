@@ -1,24 +1,28 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/dev",
-      "destination": "/index.html"
+      "src": "/dev",
+      "dest": "/dev.html",
+      "status": 200
     },
     {
-      "source": "/",
-      "destination": "/index.html"
+      "src": "/memo.txt",
+      "dest": "/memo.txt",
+      "status": 200
     },
     {
-      "source": "/login",
-      "destination": "/index.html"
+      "src": "/(login|\\$2a\\$12\\$KJywhIRpfbNU5V26wXaz7|\\$2a\\$12\\$ddM4fTZK3M74mjZm8grLDef)",
+      "dest": "/index.html",
+      "status": 200
     },
     {
-      "source": "/$2a$12$KJywhIRpfbNU5V26wXaz7",
-      "destination": "/index.html"
+      "src": "/",
+      "dest": "/index.html",
+      "status": 200
     },
     {
-      "source": "/$2a$12$ddM4fTZK3M74mjZm8grLDef",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "status": 404
     }
   ]
 }
