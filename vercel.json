@@ -5,19 +5,20 @@
       "destination": "/index.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
+    },
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
+      "source": "/login",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/$2a$12$KJywhIRpfbNU5V26wXaz7",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/$2a$12$ddM4fTZK3M74mjZm8grLDef",
+      "destination": "/index.html"
     }
   ]
 }
