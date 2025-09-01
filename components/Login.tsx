@@ -26,30 +26,17 @@ const EcorpLogo: React.FC = () => (
 const Login: React.FC = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
     const username = formData.get('username') as string;
     const password = formData.get('password') as string;
 
-    try {
-      const response = await fetch('/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
-      });
-
-      const data = await response.json();
-      
-      if (data.success) {
-        navigate('/$2a$12$KJywhIRpfbNU5V26wXaz7');
-      } else {
-        alert('Authentication failed. Please check your credentials.');
-      }
-    } catch (error) {
-      alert('Login error. Please try again.');
+    // Client-side authentication check (for CTF purposes)
+    if (username === 'tyrellw' && password === '3r@s3_UrS3lf!') {
+      navigate('/$2a$12$KJywhIRpfbNU5V26wXaz7');
+    } else {
+      alert('Authentication failed. Please check your credentials.');
     }
   };
 
