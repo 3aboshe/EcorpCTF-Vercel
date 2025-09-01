@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { MELTDOWN_SEQUENCE, CORP_ADMIN_HEADING, CORP_ADMIN_DESC, CORP_ADMIN_BUTTON, CORP_ADMIN_WARNING } from '../constants';
 
@@ -37,9 +37,6 @@ const Admin: React.FC = () => {
     <div className="fixed inset-0 bg-gray-100 font-sans text-gray-900">
         <div className="flex justify-center p-4 md:p-8">
             <div className="w-full max-w-2xl bg-white p-8 rounded-xl shadow-lg mt-8 text-center">
-                 <div className="flex justify-start mb-6">
-                    <Link to="/dashboard" className="text-sm text-blue-600 hover:underline">← Back to Dashboard</Link>
-                </div>
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-red-100 rounded-full mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
