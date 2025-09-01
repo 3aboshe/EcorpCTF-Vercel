@@ -1,30 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/assets/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "^/$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/login/?$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/dev/?$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/\\$2a\\$12\\$KJywhIRpfbNU5V26wXaz7/?$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/\\$2a\\$12\\$ddM4fTZK3M74mjZm8grLDef/?$",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
