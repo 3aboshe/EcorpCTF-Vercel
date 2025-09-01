@@ -1,28 +1,35 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/dev",
-      "dest": "/dev.html",
-      "status": 200
+      "source": "/dev",
+      "destination": "/dev.html"
     },
     {
-      "src": "/memo.txt",
-      "dest": "/memo.txt",
-      "status": 200
+      "source": "/memo.txt",
+      "destination": "/memo.txt"
     },
     {
-      "src": "/(login|\\$2a\\$12\\$KJywhIRpfbNU5V26wXaz7|\\$2a\\$12\\$ddM4fTZK3M74mjZm8grLDef)",
-      "dest": "/index.html",
-      "status": 200
+      "source": "/(login|\\$2a\\$12\\$KJywhIRpfbNU5V26wXaz7|\\$2a\\$12\\$ddM4fTZK3M74mjZm8grLDef)",
+      "destination": "/index.html"
     },
     {
-      "src": "/",
-      "dest": "/index.html",
-      "status": 200
-    },
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
     {
-      "src": "/(.*)",
-      "status": 404
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "access-control-allow-origin", 
+          "value": "*"
+        },
+        {
+          "key": "x-robots-tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }
