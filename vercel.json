@@ -1,8 +1,32 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dev",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/$2a$12$KJywhIRpfbNU5V26wXaz7",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/$2a$12$ddM4fTZK3M74mjZm8grLDef",
+      "destination": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
     }
   ]
 }
