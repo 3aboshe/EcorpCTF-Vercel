@@ -10,7 +10,7 @@ const Dev: React.FC = () => {
 
   if (showMemo) {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] text-[#00ff41] font-mono p-5">
+      <div className="min-h-screen bg-[#0a0a0a] text-[#00ff41] font-mono p-5" dir="ltr">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <button 
@@ -20,7 +20,7 @@ const Dev: React.FC = () => {
               ← Back to Dev Portal
             </button>
           </div>
-          <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+          <pre className="whitespace-pre-wrap text-sm leading-relaxed text-left">
 {`To: Development Team
 From: Bill
 
@@ -39,20 +39,20 @@ Serious note: Terry, I swear I'll fire you myself if you don't delete this folde
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-[#00ff41] font-mono overflow-x-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#00ff41] font-mono overflow-x-hidden flex items-center justify-center" dir="ltr">
       <div className="p-5">
-        <div className="max-w-[800px] ml-[50px] p-5 border border-[#00ff41] bg-[#00ff41] bg-opacity-5">
+        <div className="max-w-[800px] mx-auto p-5 border border-[#00ff41] bg-[#00ff41] bg-opacity-5">
           <h1 className="text-4xl text-center mb-8 animate-pulse" style={{
             textShadow: '2px 2px 4px rgba(0, 255, 65, 0.5)'
           }}>
             --= DEV AREA - RESTRICTED =--
           </h1>
           
-          <p className="text-xl leading-relaxed mb-8">
+          <p className="text-xl leading-relaxed mb-8 text-left">
             Internal development resources and temporary notes.
           </p>
           
-          <p className="text-xl leading-relaxed mb-8">
+          <p className="text-xl leading-relaxed mb-8 text-left">
             ⚠️ WARNING: This area contains sensitive development information. Access is restricted to authorized personnel only.
           </p>
           
